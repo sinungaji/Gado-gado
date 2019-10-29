@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../../../../Downloads/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Pane prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #3da4ab;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="238.0" layoutY="5.0" text="Food: Remember me!" textAlignment="CENTER" textFill="#fffbfb" textOverrun="CLIP">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+            <Pane fx:id="pnMax" layoutX="575.0" prefHeight="25.0" prefWidth="25.0" />
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #3da4ab;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="255.0" layoutY="5.0" text="Copyright 2019" textAlignment="CENTER" textFill="#fffbfb" textOverrun="CLIP">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <Pane prefHeight="300.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="113.0" layoutY="50.0" prefHeight="250.0" prefWidth="375.0" style="-fx-background-color: #e6e6ea;">
+               <children>
+                  <Label layoutX="110.0" layoutY="14.0" text="Selamat Datang">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="71.0" layoutY="45.0" text="Terimakasih telah menggunakan aplikasi ini">
+                     <font>
+                        <Font name="Arial Unicode MS" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="62.0" prefHeight="16.0" prefWidth="366.0" text="Aplikasi yang kami buat membantu anda untuk mengatur jam makan">
+                     <font>
+                        <Font name="Arial Unicode MS" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="112.0" layoutY="79.0" prefHeight="17.0" prefWidth="169.0" text="Silahkan Login terlebih dahulu" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Unicode MS" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfNamaPengguna" layoutX="93.0" layoutY="112.0" prefHeight="25.0" prefWidth="190.0" promptText="Nama Pengguna" />
+                  <TextField fx:id="tfKodeRahasia" layoutX="93.0" layoutY="147.0" prefHeight="25.0" prefWidth="190.0" promptText="Kode Rahasia" />
+                  <Button fx:id="btnMasuk" layoutX="157.0" layoutY="182.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #88d8b0;" text="Masuk" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Button>
+                  <Label layoutX="88.0" layoutY="219.0" prefHeight="17.0" prefWidth="114.0" text="belum punya akun? ">
+                     <font>
+                        <Font name="Arial Unicode MS" size="12.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="hplDaftar" layoutX="197.0" layoutY="216.0" text="Daftar sekarang" />
+               </children></Pane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

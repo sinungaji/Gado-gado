@@ -1,0 +1,6 @@
+#borderPane {
+	-fx-background-image: url("images/background.jpg");
+}
+#pnMax {
+	-fx-background-image: url("images/minimizeSmall.png");
+}

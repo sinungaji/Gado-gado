@@ -16,9 +16,9 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Button?>
 
-<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../../../../Downloads/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="style.css" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <Pane prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #3da4ab;" BorderPane.alignment="CENTER">
+      <Pane prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #3da4ab;" stylesheets="@style.css" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="238.0" layoutY="5.0" text="Food: Remember me!" textAlignment="CENTER" textFill="#fffbfb" textOverrun="CLIP">
                <font>

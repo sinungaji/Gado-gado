@@ -94,8 +94,9 @@
                         <Font name="Arial Unicode MS" size="12.0" />
                      </font>
                   </Label>
-                  <Hyperlink fx:id="hplDaftar" layoutX="197.0" layoutY="216.0" text="Daftar sekarang" />
+                  <Hyperlink fx:id="hplDaftar" layoutX="197.0" layoutY="216.0" onAction="#SignUp" text="Daftar sekarang" />
                </children></Pane>
+            <Label fx:id="label" layoutX="296.0" layoutY="21.0" prefHeight="17.0" prefWidth="0.0" textAlignment="CENTER" textFill="#f20404" />
          </children>
       </Pane>
    </center>

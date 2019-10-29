@@ -13,13 +13,16 @@ import javax.sql.rowset.CachedRowSet;
 import javax.sql.rowset.RowSetFactory;
 import javax.sql.rowset.RowSetProvider;
 
+/**
+ *
+ * @author budsus
+ */
 public class ConnectionDB {
 
     private static ConnectionDB dbutil = null;
     private static Connection conn = null;
 
     private ConnectionDB() {
-        
     }
 
     public static ConnectionDB getInstance() {
@@ -33,7 +36,7 @@ public class ConnectionDB {
         String urlDB = getUrlDB();
         String JDBC_DRIVER = null;
         if (urlDB != null) {
-            JDBC_DRIVER = "jdbc:sqlite:" + urlDB;
+            JDBC_DRIVER = "jdbc:sqlite:rplDB.db";
         }
 
         return JDBC_DRIVER;
@@ -42,10 +45,10 @@ public class ConnectionDB {
     private String getUrlDB() {
         try {
             Properties prop = new Properties();
-            prop.load(getClass().getClassLoader().getResourceAsStream("rplDB.db"));
+            prop.load(getClass().getClassLoader().getResourceAsStream("aplikasi.properties"));
             return prop.getProperty("data.dir");
         } catch (IOException ex) {
-            Logger.getLogger(Connection.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ConnectionDB.class.getName()).log(Level.SEVERE, null, ex);
         }
         return null;
     }
@@ -113,6 +116,10 @@ public class ConnectionDB {
             }
             dbDisconnect();
         }
+    }
+
+    public Connection getConnection() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

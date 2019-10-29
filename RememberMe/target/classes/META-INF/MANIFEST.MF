@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven Bundle Plugin
+Built-By: leo
+Build-Jdk: 1.8.0_192
+Bnd-LastModified: 1561428217926
+Bundle-Description: SQLite JDBC library
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: SQLite JDBC
+Bundle-SymbolicName: org.xerial.sqlite-jdbc;singleton:=true
+Bundle-Version: 3.28.0
+Export-Package: org.sqlite;version="3.27.2.1";uses:="javax.sql,org.sql
+ ite.core,org.sqlite.date",org.sqlite.core;version="3.27.2.1";uses:="o
+ rg.sqlite,org.sqlite.jdbc4",org.sqlite.util;version="3.27.2.1",org.sq
+ lite.date;version="3.27.2.1",org.sqlite.javax;version="3.27.2.1";uses
+ :="javax.sql,org.sqlite,org.sqlite.jdbc4",org.sqlite.jdbc4;version="3
+ .27.2.1";uses:="javax.sql,org.sqlite,org.sqlite.core,org.sqlite.jdbc3
+ ",org.sqlite.jdbc3;version="3.27.2.1";uses:="org.sqlite,org.sqlite.co
+ re"
+Import-Package: javax.sql;resolution:=optional
+Originally-Created-By: Apache Maven Bundle Plugin
+Tool: Bnd-2.1.0.20130426-122213
+

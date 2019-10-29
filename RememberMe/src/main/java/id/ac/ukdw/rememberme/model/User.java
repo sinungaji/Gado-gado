@@ -56,9 +56,9 @@ public class User {
         this("","", 0,0,0);
     }
     
-    public User(String isbn, String kataSandi, int umur,
+    public User(String namaPengguna, String kataSandi, int umur,
             int beratBadan, int tinggiBadan) {
-        this.namaPengguna = new SimpleStringProperty(isbn);
+        this.namaPengguna = new SimpleStringProperty(namaPengguna);
         this.kataSandi = new SimpleStringProperty(kataSandi);
         this.umur = new SimpleIntegerProperty(umur);
         this.beratBadan = new SimpleIntegerProperty(beratBadan);

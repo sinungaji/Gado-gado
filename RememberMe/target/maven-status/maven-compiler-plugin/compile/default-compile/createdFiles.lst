@@ -1,0 +1,5 @@
+id\ac\ukdw\rememberme\model\User.class
+id\ac\ukdw\rememberme\UserLogin.class
+id\ac\ukdw\rememberme\dao\UserDAO.class
+id\ac\ukdw\rememberme\dbConnect\ConnectionDB.class
+id\ac\ukdw\rememberme\MainApp.class

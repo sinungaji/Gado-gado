@@ -17,7 +17,7 @@ public class MainApp extends Application {
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/fxml/style.css");
         
-        stage.setTitle("JavaFX and Maven");
+        stage.setTitle("Remember Me 0.1 SuperBeta Version");
         stage.setScene(scene);
         stage.show();
     }

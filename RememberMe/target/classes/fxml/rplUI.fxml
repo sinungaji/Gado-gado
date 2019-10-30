@@ -17,7 +17,7 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Button?>
 
-<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="style.css" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RplUIController">
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="style.css" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.ukdw.RplUIController">
    <top>
       <Pane prefHeight="39.0" prefWidth="600.0" style="-fx-background-color: #3da4ab;" stylesheets="@style.css" BorderPane.alignment="CENTER">
          <children>
@@ -30,7 +30,7 @@
                <children>
                   <Label fx:id="lbl_close" layoutX="-1.0" layoutY="1.0" prefHeight="36.0" prefWidth="25.0" text="X" textFill="WHITE">
                      <cursor>
-                        <Cursor fx:constant="DEFAULT" />
+<!--                        <Cursor fx:constant="DEFAULT" />-->
                      </cursor>
                      <effect>
                         <Glow />
@@ -86,7 +86,7 @@
                         <Font name="Arial Rounded MT Bold" size="12.0" />
                      </font>
                      <cursor>
-                        <Cursor fx:constant="HAND" />
+<!--                        <Cursor fx:constant="HAND" />-->
                      </cursor>
                   </Button>
                   <Label layoutX="88.0" layoutY="219.0" prefHeight="17.0" prefWidth="114.0" text="belum punya akun? ">

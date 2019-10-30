@@ -45,10 +45,10 @@ public class RplUIController implements Initializable {
     private Hyperlink hplDaftar;
    
     @FXML
-    private void Login(ActionEvent event) throws IOException {
+    private void Login(ActionEvent event) throws IOException, SQLException {
         if(database.dbLogin(tfNamaPengguna.getText(), pfKataSandi.getText())){
             Stage stageUtama = new Stage();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("fxml/rplUI.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("fxml/rplUI-Beranda.fxml"));
             Parent root1 = (Parent) loader.load();
             Scene scene = new Scene(root1);
             scene.getStylesheets().add("/styles/style.css");
@@ -58,9 +58,27 @@ public class RplUIController implements Initializable {
             label.setText("Nama atau Kata Sandi anda salah");
         }
     } 
-    @Override
-        public void initialize(URL url, ResourceBundle rb) {
     
+    public void handleDaftar(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("fxml/rplUI.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));  
+            stage.show();
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
     }
+    
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+        if (database.isDbConnected()) {
+            label.setText("Connected");
+        } else {
+            label.setText("Not Connected");
+        }
+    }    
 }
 

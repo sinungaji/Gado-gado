@@ -24,7 +24,7 @@ public class UserDAO {
         }
     }
     
-    public boolean isLogin(String namaPengguna, String kataSandi) throws SQLException {
+    public boolean dbLogin(String namaPengguna, String kataSandi) throws SQLException {
         PreparedStatement preparedStatement = null;
         ResultSet rs = null;
         String query = "SELECT * FROM pengguna where namaPengguna = ? and kataSandi = ?";

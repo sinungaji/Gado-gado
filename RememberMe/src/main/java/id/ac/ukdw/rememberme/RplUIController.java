@@ -59,9 +59,9 @@ public class RplUIController implements Initializable {
         }
     } 
     
-    public void handleDaftar(ActionEvent event) {
+    public void SignUp(ActionEvent event) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("fxml/rplUI.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/rplUI-pendaftaran.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));  

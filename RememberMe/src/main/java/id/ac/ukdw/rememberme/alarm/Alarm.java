@@ -5,6 +5,8 @@
  */
 package id.ac.ukdw.rememberme.alarm;
 
+import java.util.Calendar;
+
 /**
  *
  * @author user
@@ -13,11 +15,15 @@ public class Alarm {
     private int jam;
     private int menit;
     private int detik;
+    //boleh diapus boleh di keep tapi jadi tampungan
+    private Calendar a;         //pelajari di google
+    //bikin class dao.java lagi
     
     public Alarm(int jam, int menit, int detik){
         this.jam = jam;
         this.menit = menit;
         this.detik = detik;
+        //cara masukin angka tadi ke java calendar
     }
     
     public void setJam(int jam){

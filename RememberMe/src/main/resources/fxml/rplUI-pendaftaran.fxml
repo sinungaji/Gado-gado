@@ -60,7 +60,7 @@
                         <Font name="Arial Rounded MT Bold" size="12.0" />
                      </font>
                      <cursor>
-                        <Cursor fx:constant="NONE" />
+<!--                        <Cursor fx:constant="NONE" />-->
                      </cursor>
                   </Button>
                   <TextField fx:id="tfUmur" layoutX="92.0" layoutY="140.0" prefHeight="25.0" prefWidth="190.0" promptText="Umur" />

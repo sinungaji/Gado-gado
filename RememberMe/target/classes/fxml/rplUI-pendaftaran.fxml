@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Pane prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #3da4ab;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="238.0" layoutY="5.0" text="Food: Remember me!" textAlignment="CENTER" textFill="#fffbfb" textOverrun="CLIP">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #3da4ab;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="255.0" layoutY="5.0" text="Copyright 2019" textAlignment="CENTER" textFill="#fffbfb" textOverrun="CLIP">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <Pane prefHeight="300.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="bgPane" layoutX="113.0" layoutY="50.0" prefHeight="250.0" prefWidth="370.0" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="127.0" layoutY="14.0" text="Pendaftaran">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="93.0" layoutY="45.0" text="Sialahkan masukkan data diri Anda">
+                     <font>
+                        <Font name="Arial Unicode MS" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfNamaDaftar" layoutX="92.0" layoutY="74.0" prefHeight="25.0" prefWidth="190.0" promptText="Nama Pengguna" />
+                  <Button fx:id="btnLanjut" layoutX="153.0" layoutY="206.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: #88d8b0;" text="Lanjut &gt;" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                     <cursor>
+<!--                        <Cursor fx:constant="NONE" />-->
+                     </cursor>
+                  </Button>
+                  <TextField fx:id="tfUmur" layoutX="92.0" layoutY="140.0" prefHeight="25.0" prefWidth="190.0" promptText="Umur" />
+                  <TextField fx:id="tfJenisKelamin" layoutX="92.0" layoutY="172.0" prefHeight="25.0" prefWidth="190.0" promptText="Jenis Kelamin" />
+                  <PasswordField fx:id="p" layoutX="93.0" layoutY="106.0" prefHeight="25.0" prefWidth="189.0" promptText="Kode Rahasia" />
+               </children></Pane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

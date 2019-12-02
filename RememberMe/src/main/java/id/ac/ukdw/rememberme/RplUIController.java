@@ -48,7 +48,7 @@ public class RplUIController implements Initializable {
     private void Login(ActionEvent event) throws IOException, SQLException {
         if(database.dbLogin(tfNamaPengguna.getText(), pfKataSandi.getText())){
             Stage stageUtama = new Stage();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/rplUI-Beranda.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/rplUI-Beranda_1.fxml"));
             Parent root1 = (Parent) loader.load();
             Scene scene = new Scene(root1);
             scene.getStylesheets().add("/styles/style.css");

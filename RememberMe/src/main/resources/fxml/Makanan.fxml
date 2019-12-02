@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ancor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.ukdw.rememberme.MakananController">
+   <children>
+      <Pane prefHeight="54.0" prefWidth="634.0" style="-fx-background-color: #3da4ab;" />
+      <Separator layoutX="-6.0" layoutY="-1.0" prefHeight="119.0" prefWidth="640.0" styleClass="style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Separator layoutX="191.0" layoutY="58.0" orientation="VERTICAL" prefHeight="370.0" prefWidth="47.0" AnchorPane.bottomAnchor="-5.0" />
+      <VBox layoutX="386.0" layoutY="223.0" prefHeight="200.0" prefWidth="100.0" />
+      <VBox layoutX="14.0" layoutY="266.0" prefHeight="65.0" prefWidth="196.0">
+         <children>
+            <TextArea fx:id="resultConsole" nodeOrientation="RIGHT_TO_LEFT" prefHeight="68.0" prefWidth="196.0" />
+         </children>
+      </VBox>
+      <Button alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="100.0" layoutY="230.0" mnemonicParsing="false" onAction="#insertMakanan" prefHeight="25.0" prefWidth="114.0" text="Tambah Makanan" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="3.0" right="10.0" />
+         </padding>
+      </Button>
+      <Label alignment="CENTER" layoutX="229.0" layoutY="2.0" text="MAKANAN" textFill="WHITE">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableMakanan" layoutX="222.0" layoutY="237.0" prefHeight="140.0" prefWidth="406.0" style="-fx-background-color: #ffffff;">
+        <columns>
+          <TableColumn fx:id="colMknId" prefWidth="53.0" text="ID" />
+          <TableColumn fx:id="colMknName" prefWidth="126.0" text="Nama Makanan" />
+            <TableColumn fx:id="colMknBerat" prefWidth="98.0" text="Berat (Gr)" />
+            <TableColumn fx:id="colKalori" prefWidth="64.0" text="Kalori" />
+            <TableColumn fx:id="colUnit" prefWidth="64.0" text="Unit" />
+        </columns>
+      </TableView>
+      <Label layoutX="229.0" layoutY="71.0" text="Makanan ID" />
+      <Button alignment="CENTER" layoutX="229.0" layoutY="132.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Cari" />
+      <Button alignment="CENTER" layoutX="311.0" layoutY="132.0" mnemonicParsing="false" onAction="#updateMakanan" prefHeight="31.0" prefWidth="64.0" text="Update" />
+      <Label layoutX="320.0" layoutY="71.0" text="Berat" />
+      <TextField fx:id="srcBerat" layoutX="322.0" layoutY="95.0" prefHeight="25.0" prefWidth="64.0" />
+      <Button alignment="CENTER" layoutX="396.0" layoutY="132.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text="Hapus" />
+      <Button alignment="CENTER" layoutX="475.0" layoutY="132.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="134.0" text="Cari Semua Makanan" />
+      <Button alignment="CENTER" layoutX="24.0" layoutY="230.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Clear" />
+      <Label layoutX="14.0" layoutY="71.0" prefHeight="17.0" prefWidth="70.0" text="Nama Makanan" />
+      <TextField fx:id="tfNamaMakanan" layoutX="86.0" layoutY="67.0" prefHeight="25.0" prefWidth="128.0" promptText="Nama Makanan" />
+      <TextField fx:id="tfBerat" layoutX="86.0" layoutY="107.0" prefHeight="25.0" prefWidth="128.0" promptText="Berat" />
+      <TextField fx:id="tfKalori" layoutX="86.0" layoutY="143.0" prefHeight="25.0" prefWidth="128.0" promptText="Kalori" />
+      <Label layoutX="14.0" layoutY="111.0" text="Berat" />
+      <Label layoutX="14.0" layoutY="147.0" text="Kalori" />
+      <Label layoutX="14.0" layoutY="189.0" text="Unit" />
+      <TextField fx:id="tfUnit" layoutX="86.0" layoutY="185.0" prefHeight="25.0" prefWidth="128.0" promptText="Unit" />
+      <TextField fx:id="srcMakananId" layoutX="229.0" layoutY="95.0" prefHeight="25.0" prefWidth="64.0" />
+      <TextField fx:id="srcKalori" layoutX="411.0" layoutY="95.0" prefHeight="25.0" prefWidth="64.0" />
+      <TextField fx:id="srcUnit" layoutX="498.0" layoutY="95.0" prefHeight="25.0" prefWidth="64.0" />
+      <Label layoutX="411.0" layoutY="71.0" text="Kalori" />
+      <Label layoutX="498.0" layoutY="71.0" text="Unit" />
+      <Label layoutX="17.0" layoutY="344.0" text="Result Console" />
+      <Button fx:id="btnLoad" layoutX="229.0" layoutY="384.0" mnemonicParsing="false" text="Load Database" />
+      <TableView layoutX="222.0" layoutY="170.0" prefHeight="54.0" prefWidth="406.0">
+        <columns>
+          <TableColumn prefWidth="52.0" text="ID" />
+          <TableColumn prefWidth="128.0" text="Nama Makanan" />
+            <TableColumn prefWidth="95.0" text="Berat (Gr)" />
+            <TableColumn prefWidth="65.0" text="Kalori" />
+            <TableColumn prefWidth="62.0" text="Unit" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

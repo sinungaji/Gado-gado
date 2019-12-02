@@ -1,8 +1,13 @@
-id\ac\ukdw\rememberme\LoginController.class
-id\ac\ukdw\rememberme\RplUIController.class
 id\ac\ukdw\rememberme\model\User.class
-id\ac\ukdw\rememberme\MainApp.class
+id\ac\ukdw\rememberme\AlarmController.class
+id\ac\ukdw\rememberme\db\DBUtil.class
+id\ac\ukdw\rememberme\SignUpController.class
 id\ac\ukdw\rememberme\ConnectionDB.class
-id\ac\ukdw\rememberme\FXMLController.class
+id\ac\ukdw\rememberme\MakananController.class
 id\ac\ukdw\rememberme\alarm\Alarm.class
 id\ac\ukdw\rememberme\UserDAO.class
+id\ac\ukdw\rememberme\LoginController.class
+id\ac\ukdw\rememberme\RplUIController.class
+id\ac\ukdw\rememberme\MainApp.class
+id\ac\ukdw\rememberme\model\Makanan.class
+id\ac\ukdw\rememberme\db\MakananDAO.class

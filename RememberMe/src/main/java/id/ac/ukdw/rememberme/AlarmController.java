@@ -54,9 +54,23 @@ public class AlarmController {
     private Button btnALarm;
     
     @FXML
+    private Button btnRiwayat;
+    
+    @FXML
     private void Next(ActionEvent event) throws IOException, SQLException {
          try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/Makanan.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));  
+            stage.show();
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+    private void Riwayat(ActionEvent event) throws IOException, SQLException {
+         try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/Riwayat.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));  
